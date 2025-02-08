@@ -3,4 +3,23 @@
     padding:10px;
     background-color: lemonchiffon;
     border: 1px solid;
+    margin:20px;
+
+}
+
+.fixed-position
+{
+    position: fixed ;
+    background-color: plum;
+    margin-top: -15px;
+    text-align: center;
+    width: 1600px;;
+    padding:10px;
+    margin-left: -10px;
+    top:0;
+}
+
+.relative-position
+{
+   
 }
