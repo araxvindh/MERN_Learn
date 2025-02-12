@@ -1,0 +1,72 @@
+.relative-pos
+{
+    background-color: olive;
+    position: relative;
+    /* margin: 100px; */
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.relative-pos1
+{
+    background-color:khaki;
+    position: relative;
+    /* margin: 100px; */
+    z-index: 2;
+}
+
+.relative-pos2
+{
+    background-color: olive;
+    position: relative;
+    /* margin: 100px; */
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.div-pos
+{
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    z-index:5;
+}
+
+.div-abs
+{
+    position:relative;
+    margin: 200px;
+    border: 2px solid goldenrod;
+    height:50px;
+    width: 50px;
+}
+
+.abs-pos
+{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.rel-abs
+{
+    position: relative;
+    top: 50px;
+}
+
+.abs-rel
+{
+    position: absolute;
+    top: 15px;
+}
+
+.fix-pos
+{
+    /* position: fixed; */
+    
+    position: sticky;
+    top: 150px;
+}

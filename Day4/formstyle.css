@@ -1,0 +1,30 @@
+input
+{
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button
+{
+    position: relative;
+    
+    border: 2px solid gold;
+    margin: 5px; 
+}
+
+input[type=number]
+{
+    border: 2px solid red;
+}
+form
+{
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 650px;
+    top: 220px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
