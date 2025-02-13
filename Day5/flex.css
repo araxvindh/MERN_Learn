@@ -28,7 +28,10 @@ nav
 
 .skill
 {
-    color:aliceblue
+    color:rgb(23, 24, 24);
+    list-style-type: none;
+    margin-left: 220px;
+
 }
 
 @media screen and (max-width: 600px)
