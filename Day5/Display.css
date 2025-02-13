@@ -1,0 +1,8 @@
+li{
+    display: inline;
+}
+
+li ::before
+{
+    counter-increment: initial;
+}

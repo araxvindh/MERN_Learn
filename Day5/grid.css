@@ -1,0 +1,153 @@
+.container
+{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    background-color: bisque;
+    padding: 30px;
+    width: auto;
+}
+.grid-items
+{
+
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    
+}
+
+.img-container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(198, 148, 86);
+    padding: 30px;
+}
+
+.img-items
+{
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 110px;
+    width: 110px;
+    padding: 10px;
+    
+}
+
+h6{
+    margin: 0;
+}
+
+@media screen and (max-width:300px){
+    .container
+{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    background-color: bisque;
+    padding: 30px;
+    
+
+}
+.grid-items
+{
+
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    
+}
+
+.img-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(198, 148, 86);
+    padding: 30px;
+}
+
+.img-items
+{
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    
+}
+
+h6{
+    margin: 0;
+}
+img
+{
+    width: 50px;
+    height: 50px;
+}
+}
+
+@media screen and (max-width:300px){
+    .container
+{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    background-color: bisque;
+    padding: 30px;
+    
+
+}
+.grid-items
+{
+
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    
+}
+
+.img-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(198, 148, 86);
+    padding: 30px;
+}
+
+.img-items
+{
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    
+}
+
+h6{
+    margin: 0;
+}
+img
+{
+    width: 50px;
+    height: 50px;
+}
+}

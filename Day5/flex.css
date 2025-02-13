@@ -1,0 +1,41 @@
+nav
+{
+    display: flex;
+    list-style-type: none;
+    /* justify-content: flex-end;
+    gap:30px; */
+    justify-content: space-evenly;
+    background-color: rgb(44, 114, 152);
+    padding: 5px;
+    flex-direction: row;
+}
+.link
+{
+    text-decoration:none ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 6px;
+}
+
+.link:hover
+{
+    background-color:white;
+    color: chocolate;
+
+    
+}
+
+.skill
+{
+    color:aliceblue
+}
+
+@media screen and (max-width: 600px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+    
+}
