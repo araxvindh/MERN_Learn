@@ -116,5 +116,59 @@ console.log(a&b); // 2
 console.log(a|b); // 103
 console.log(a^b); // 101
 console.log(~1); // -2
+
+console.log("shift operators");
+//left shift
+
+console.log(128<<1); 
+//right shift
+
 console.log("--------------------------------------------------------------------------------------------------------------------------");
 
+//conditional statements
+/*
+    1.if 
+    2.if else
+    3.else if ladder
+    4.switch
+*/
+
+
+console.log("--------------------------------------------------------------------------------------------------------------------------");
+
+//looping satements
+
+/*
+    1.while
+    2.do while
+    3.for
+    4.for in
+    5.for of
+    6.forEach
+*/
+
+array =[10,2,0,30,"abc",true,"hello",[1,2,3,4,5]]
+
+for(i in array)
+{
+    console.log(i);
+}
+
+for(i of array)
+{
+    console.log(i);
+}
+
+for({key,value} of Object.entries(object1))
+{
+    console.log(key,value);
+}
+
+array.forEach((element)=>{
+    console.log(element);
+})
+
+Object.entries(object1).forEach((key,element)=>{
+    console.log(key,element);
+})
+console.log("--------------------------------------------------------------------------------------------------------------------------")
