@@ -12,7 +12,7 @@
 
  function testFunction1()
  {
-   reutrn "Function is called";
+   return "Function is called";
  }
 
  console.log(testFunction1()); // Function is called
