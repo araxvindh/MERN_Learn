@@ -5,3 +5,4 @@ async function asAw() {
 }
 
 console.log(asAw()); // hello
+

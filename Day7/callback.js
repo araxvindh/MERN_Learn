@@ -17,6 +17,3 @@ function formValidation()
 }
 
 formSubmission("Form submitted successfully",formValidation); // Form submitted successfully
-
-
-console.log();
