@@ -1,6 +1,6 @@
 const Home = () =>{
     return (
-        <h1>Home Page</h1>
+        <a href=""><h2>Home Page</h2></a>
     )
 }
 export default Home

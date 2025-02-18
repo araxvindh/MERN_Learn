@@ -64,6 +64,5 @@ async function postCode()
     console.log(comment);
     console.log(share);
 }
-
 postCode()
 // console.log( postCode());
