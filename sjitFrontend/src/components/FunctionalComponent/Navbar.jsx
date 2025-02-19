@@ -10,9 +10,9 @@ const Navbar =()=>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/skill'>Contact</Link></li>
                 
-                <div>
+                <div class="hov">
                 <span>Hooks</span>
-                    <ol> 
+                    <ol class="hoverapp"> 
                     <li><Link to='/use-state'>Usestate</Link></li>
                     <li><Link to='/use-effect'>UseEffect</Link></li>
                 </ol>
