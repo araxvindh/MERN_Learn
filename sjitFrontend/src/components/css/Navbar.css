@@ -2,9 +2,13 @@ nav
 {
     display:flex;
     list-style-type: none;
-    background-color: darkslategray;
+    background-color: rgb(166, 51, 28);
     color: blanchedalmond;
     justify-content: space-evenly;
-    height: 30px;
     padding :10px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
 }
