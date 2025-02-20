@@ -1,4 +1,4 @@
-import Home from "./components/FunctionalComponent/home"
+import Home from "./components/FunctionalComponent/Home"
 import About from "./components/FunctionalComponent/About"
 import Skills from "./components/FunctionalComponent/Skills"
 import Sign from "./components/FunctionalComponent/Sign"
