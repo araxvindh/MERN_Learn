@@ -1,7 +1,6 @@
 import Home from "./components/FunctionalComponent/home"
 import About from "./components/FunctionalComponent/About"
 import Skills from "./components/FunctionalComponent/Skills"
-import Contact from "./components/FunctionalComponent/Contact"
 import Sign from "./components/FunctionalComponent/Sign"
 import Navbar from "./components/FunctionalComponent/Navbar"
 import{BrowserRouter as Router, Route, Routes} from 'react-router-dom'
