@@ -7,18 +7,22 @@ import {useState,useEffect,useMemo} from 'react';
 
 function slowFunction(num)
 {
-    for(let i=0;i<=10;i++){}
+    for(let i=0;i<=1000;i++){}
     return num*2;
 }
 
 const UseMemo = ()=>
 {
-    var[number,setNumber]=useState(0);
+    var[number,setNumber]=useState();
     var[theme,setTheme]=useState(true);
     var styling ={
         backgroundColor:theme ? "black":"white",
         color:theme ? "white":"black"
     };
+    var doubleUpNumber = useMemo(()=>{
+        return slowFunction(number);
+    },[number])
+
     return(
         <>
         <div style={styling}>
@@ -31,6 +35,9 @@ const UseMemo = ()=>
             </h3>
             <h3>
                 the number is {slowFunction(number)}
+            </h3>
+            <h3>
+                the number is {doubleUpNumber}
             </h3>
         </div>
         </>
