@@ -25,7 +25,7 @@ function About()
 
     return(
         <div>
-            <h2>About Me</h2>
+            <h2>About Me</h2>   
             <h3>State inital Value is {init}</h3>
             <button onClick={handleDecrement}>-</button>
             <h4>updating:{num}</h4>

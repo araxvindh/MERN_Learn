@@ -2,23 +2,41 @@ nav
 {
     display:flex;
     list-style-type: none;
-    background-color: rgb(166, 51, 28);
+    background-color: rgb(168, 90, 75);
     color: blanchedalmond;
     justify-content: space-evenly;
     padding :10px;
-}
-*
-{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    top: 0px;
 }
 
-.hoverapp{
-    top: 100%;
-    left: 0;
-    list-style-type: none;
-    display: none;
+.dropdown
+{
+    display: inline-block;
+    position: relative;
 }
-.hov:hover .hoverapp{
+
+.dropdown-link
+{
     display: block;
+    position:absolute;
+    background-color: coral;
+    list-style-type: none;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px;
+    top: 0px;
+    text-align: center;
+}
+
+.dropdown-list
+
+{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+}
+
+.dropdown-link:hover
+{
+    background-color: rgb(191, 60, 34);
 }

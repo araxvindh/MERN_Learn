@@ -1,4 +1,4 @@
-import "../css/formstyle.css"
+//import "../css/formstyle.css"
 import { Link } from 'react-router-dom';
 function Sign() {
     return (

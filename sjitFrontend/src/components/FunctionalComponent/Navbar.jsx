@@ -1,21 +1,27 @@
 import '../css/Navbar.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navbar =()=>
 {
-    return(
+    var[dropdown,showDropDown] = useState(false)
+    return( 
         <header>
             <nav>
                 <li><Link to='/home'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/skill'>Contact</Link></li>
-                
-                <div class="hov">
+                <div class="dropdown" onMouseEnter={()=> showDropDown(!dropdown)} onMouseLeave={()=>showDropDown(!dropdown)}>
+
                 <span>Hooks</span>
-                    <ol class="hoverapp"> 
-                    <li><Link to='/use-state'>Usestate</Link></li>
-                    <li><Link to='/use-effect'>UseEffect</Link></li>
-                </ol>
+                    {( dropdown  && <ol class="dropdown-link"> 
+                    <li className='dropdown-list'><Link to='/use-state'>Usestate</Link></li>
+                    <li className='dropdown-list'><Link to='/use-effect'>UseEffect</Link></li>
+                    <li className='dropdown-list'><Link to='/use-effect-api'>UseEffectApi</Link></li>
+                    <li className='dropdown-list'><Link to='/use-ref'>UseRef</Link></li>
+                    <li className='dropdown-list'><Link to='/use-memo'>UseMemo</Link></li>
+                </ol> )}
+
                 </div>
                 <li><Link to='/signup'>Signup</Link></li>
             </nav>
