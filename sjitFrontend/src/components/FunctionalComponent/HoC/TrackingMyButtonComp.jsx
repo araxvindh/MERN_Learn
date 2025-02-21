@@ -1,4 +1,4 @@
-const TrackingMyButtonComp =(Component) =>
+const trackingMyButtonComp =(Component) =>
 {
     return(props)=>
     {
@@ -20,4 +20,4 @@ const TrackingMyButtonComp =(Component) =>
     }
 }
 
-export default TrackingMyButtonComp
+export default trackingMyButtonComp
