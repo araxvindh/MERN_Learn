@@ -3,7 +3,7 @@ import About from "./components/FunctionalComponent/About"
 import Skills from "./components/FunctionalComponent/Skills"
 import Sign from "./components/FunctionalComponent/Sign"
 import Navbar from "./components/FunctionalComponent/Navbar"
-import{BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UseEffect from "./components/FunctionalComponent/Hooks/UseEffect"
 import Login from "./components/FunctionalComponent/Login"
 import UseEffectAPI from "./components/FunctionalComponent/Hooks/UseEffectAPI"
@@ -12,13 +12,13 @@ import UseState from "./components/FunctionalComponent/Hooks/UseState"
 import UseMemo from "./components/FunctionalComponent/Hooks/UseMemo"
 import UseCallback from "./components/FunctionalComponent/Hooks/UseCallback"
 import UseMemoize from "./components/FunctionalComponent/Hooks/UseMemoize"
-import HoC from "./components/FunctionalComponent/HoC/Hoc"
+import Hoc from "./components/FunctionalComponent/HoC/Hoc"
 function App() {
   
 
   return (
     <main>
-      <Router>
+      <BrowserRouter>
       <Navbar></Navbar>
       <Routes>
         <Route path="/home" element={<Home  properties="hi" sjit="hello sjit"></Home>}></Route>
@@ -31,11 +31,11 @@ function App() {
         <Route path="/use-state" element={<UseState></UseState>}></Route>
         <Route path="/use-callback" element={<UseCallback></UseCallback>}></Route>
         <Route path="/use-memoize" element={<UseMemoize></UseMemoize>}></Route>
-        <Route path="/hoc" element={<HoC></HoC>}></Route>
+        <Route path="/hoc" element={<Hoc></Hoc>}></Route>
         <Route path="/use-memo" element={<UseMemo></UseMemo>}></Route>
         <Route path="/signup/login" element={<Login></Login>}></Route>
       </Routes>
-      </Router>
+      </BrowserRouter>
     </main>
   )
 }

@@ -4,7 +4,7 @@ const trackingMyButtonComp =(Component) =>
     {
         const handlecllick =()=>
         {
-            alert("the tracking info on clicking this button"+ props.TrackingInfo.CusId)
+            alert("the tracking info on clicking this button"+ props.trackingInfo.CusId)
         }
         return(
             <form onClick={handlecllick}>
@@ -12,7 +12,7 @@ const trackingMyButtonComp =(Component) =>
                 <br />
 
                 Password : <input type="text" />
-                <br />
+                <br/>
 
                 <Component {...props}/>
             </form>
