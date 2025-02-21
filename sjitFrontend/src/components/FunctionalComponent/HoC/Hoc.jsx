@@ -1,13 +1,12 @@
 import Button from "./Button"
-import trackingMyButtonComp from "./trackingMyButtonComp"
-
+import TrackingMyButtonComp from "./TrackingMyButtonComp"
 const Hoc = () =>{
-    const ButtonTrack=  trackingMyButtonComp(Button)
+    const ButtonTrack=  TrackingMyButtonComp(Button)
     return(
         <div>
            <h1> Welcome to  Higher Order Components(HoC)</h1>
            <Button value={"LOGIN"} />
-           <ButtonTrack value ={"Login"} trackingInfo={{CusId:"Hello",password:"Password"}}></ButtonTrack>
+           <ButtonTrack value ={"Login"} TrackingInfo={{CusId:"Hello",password:"Password"}}></ButtonTrack>
         </div>
     )
 }

@@ -1,23 +1,16 @@
-const trackingMyButtonComp =(Component) =>
-{
-    return(props)=>
-    {
-        const handlecllick =()=>
-        {
-            alert("the tracking info on clicking this button"+ props.trackingInfo.CusId)
+const TrackingMyButtonComp=(Component)=>{
+    return(props)=>{
+        const handleClick=()=>{
+            alert("The tracinkg info on Clicking This Button "+props.TrackingInfo.CustId)
         }
         return(
-            <form onClick={handlecllick}>
-                Email : <input type="text" />
-                <br />
-
-                Password : <input type="text" />
-                <br/>
-
-                <Component {...props}/>
+            <form onClick={handleClick}>
+            Email: <input type="text" />
+            Password : <input type="text" />
+            <Component {...props}></Component>
             </form>
         )
     }
+    
 }
-
-export default trackingMyButtonComp
+export default TrackingMyButtonComp
