@@ -11,7 +11,7 @@ const UseCallback = () => {
         <>
             <div style={styling}>
                 <button onClick={() => setTheme(!theme)} >DarkMode</button>
-                <h1>
+                <h1>   
                     Use CallBack
                 </h1>
                 Number Box : <input type="number" value={num} onChange={(e) => setNum(e.target.value)}></input>

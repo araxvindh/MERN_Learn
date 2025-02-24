@@ -11,14 +11,14 @@ const Navbar =()=>
             <nav>
                 <li><Link to='/home'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
-                <li><Link to='/skill'>Contact</Link></li>
+                <li><Link to='/res'>PropsDrilling</Link></li>
                 <li><Link to='/hoc'>HOC</Link></li>
             
                 <div class="dropdown" onMouseEnter={()=> showDropDown1(!dropdown1)} onMouseLeave={()=>showDropDown1(!dropdown1)}>
                 <span>Memoziation</span>
                     {( dropdown1  && <ol class="dropdown-link"> 
                     <li className='dropdown-list'><Link to='/memo'>Memo</Link></li>
-                    <li className='dropdown-list'><Link to='/lazy'>LazyAndSuspense</Link></li>
+                    <li className='dropdown-list'><Link to='/lazy'>LazyAndSuspense</Link></li>                              
                 </ol> )}
 
                 </div>
