@@ -39,4 +39,36 @@ app.post("/signup", async(req, res) => {
     }
 });
 
+
+app.post("/login", async(req,res) =>
+{
+    try{
+        const{email,password}=req.body;
+        console.log(req.body);
+        const user =await signup_Schema.findOne({"email":email})
+        if(email!=user.email)
+        {
+            res.status(201).json({message:"User not found",isLogin:false})
+        }
+        
+       // const pass =bcrypt.compare(password,user.password);
+
+        if(password!=user.password)
+        {
+            res.status(201).json({message:"Password in correct",isLogin:false});
+        }
+
+        console.log("Login Successful")
+
+        res.status(201).json({message:"Login Successful",isLogin:true});
+    }
+    catch(error)
+    {
+        res.status(201).json({message:"Login Unsuccessful",isLogin:false})
+    }
+
+})
+
+
+
 app.listen(PORT, () => console.log("Server Started Successfully"));
