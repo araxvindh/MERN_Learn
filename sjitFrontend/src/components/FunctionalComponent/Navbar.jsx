@@ -9,7 +9,7 @@ const Navbar =()=>
     return( 
         <header>
             <nav>
-                <li><Link to='/home'>Home</Link></li>
+                <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/res'>PropsDrilling</Link></li>
                 <li><Link to='/hoc'>HOC</Link></li>
