@@ -1,5 +1,5 @@
 const express = require("express");
-const mdb = require("mongoose"); //mdb=>mongoDB
+const mdb = require("mongoose"); 
 const dotenv = require("dotenv")
 const signup_Schema = require("./models/signupSchema")
 const app = express();
