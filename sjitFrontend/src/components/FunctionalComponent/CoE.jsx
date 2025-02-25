@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import StudentResults from "../FunctionalComponent/ContextApi/StudentResult";
+import Faculty from "../FunctionalComponent/ContextApi/Faculty"
 
 export const  ResultPub = createContext();
 
@@ -9,7 +9,7 @@ const CoE =() =>
             <div>
                  <ResultPub.Provider value={{sgpa:"10 SGPA" ,cgpa:"10 CGPA"}}>
                     <h1> Result Published</h1>
-                    <StudentResults></StudentResults>
+                    <Faculty></Faculty>
                  </ResultPub.Provider>
             </div> 
         )

@@ -1,6 +1,7 @@
 const express = require("express");
 const mdb = require("mongoose"); 
 const dotenv = require("dotenv")
+const bcrypt =require('bcrypt')
 const signup_Schema = require("./models/signupSchema")
 const app = express();
 app.use(express.json());
@@ -16,16 +17,18 @@ mdb
         console.log("Check yout Connection", err);
     });
 
-app.post("/signup", (req, res) => {
+app.post("/signup", async(req, res) => {
     try {
+
         console.log(req.body);
         const { firstName, lastName, email, password, phoneNumber } = req.body;
+        const hashedpass= await bcrypt.hash(password,10);
         const newSignup = new signup_Schema({
             firstName: firstName,
             lastName: lastName,
             email: email,
             phoneNumber: phoneNumber,
-            password: password
+            password: hashedpass
         });
         newSignup.save();
         console.log("SIGNUP SUCCESS");

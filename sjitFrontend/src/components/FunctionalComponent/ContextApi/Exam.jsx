@@ -10,5 +10,5 @@ const Exam =() =>
     
         )
     }
-    
-    export default Exam;
+
+ export default Exam;
