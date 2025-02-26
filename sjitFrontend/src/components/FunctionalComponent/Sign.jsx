@@ -2,9 +2,9 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
-// import { useNavigate } from 'react-router-dom';
-// const navigate =useNavigate();
+import { useNavigate } from 'react-router-dom';
 function Sign() {
+    const navigate =useNavigate();
         const [firstName,setFName]=useState("");
         const [lastName,setLName]=useState("");
         const [email,setEmail]=useState("");
@@ -14,13 +14,24 @@ function Sign() {
         {
                 event.preventDefault();
                 const req = await axios.post("http://localhost:3001/signup",{
-
                     firstName:firstName,
                     lastName:lastName,
                     email:email,
                     password:password,
                     phoneNumber:phoneNumber
                 });
+                const message = req.data.message
+            const isSignup = req.data.isSignup
+            if (isSignup) {
+             console.log(isSignup,message)
+                alert(message)
+                navigate('/signup/login')
+            }
+            else {
+                console.log(isSignup,message)
+                alert(message)
+            }
+
         };
     return (
         <div>
