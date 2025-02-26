@@ -3,7 +3,9 @@ const mdb = require("mongoose");
 const dotenv = require("dotenv")
 const bcrypt =require('bcrypt')
 const signup_Schema = require("./models/signupSchema")
+const  cors =require('cors')
 const app = express();
+app.use(cors())
 app.use(express.json());
 const PORT = 3001;
 dotenv.config();
@@ -39,28 +41,41 @@ app.post("/signup", async(req, res) => {
     }
 });
 
+app.get('/getsignupdet',(req,res)=>
+{
+    const signUp = signup_Schema.find()
+    console.log(signUp)
+})
+
+
 
 app.post("/login", async(req,res) =>
 {
     try{
         const{email,password}=req.body;
         console.log(req.body);
-        const user =await signup_Schema.findOne({"email":email})
-        if(email!=user.email)
+        const user = await signup_Schema.findOne({"email":email})
+        if(user)
+        {
+            const isValidPassword= await bcrypt.compare(password,user.password);
+            console.log(isValidPassword);
+
+            if(isValidPassword)
+            {
+                res.status(201).json({message:"Login Successful",isLogin:true})
+            }
+            else
+            {
+                res.status(201).json({message:"Password inCorrect",isLogin:false})
+            }
+           
+        }
+        else
         {
             res.status(201).json({message:"User not found",isLogin:false})
         }
         
        // const pass =bcrypt.compare(password,user.password);
-
-        if(password!=user.password)
-        {
-            res.status(201).json({message:"Password in correct",isLogin:false});
-        }
-
-        console.log("Login Successful")
-
-        res.status(201).json({message:"Login Successful",isLogin:true});
     }
     catch(error)
     {
@@ -68,7 +83,6 @@ app.post("/login", async(req,res) =>
     }
 
 })
-
 
 
 app.listen(PORT, () => console.log("Server Started Successfully"));
