@@ -9,10 +9,11 @@ function Sign() {
         const [email,setEmail]=useState("");
         const [password,setPass]=useState("");
         const [phoneNumber,setPhoneno]=useState(0);
+        const navigate = useNavigate()
         const handleSignUp =async(event)=>
         {
                 event.preventDefault();
-                const req = await axios.post("http://localhost:3001/signup",{
+                const req = await axios.post("https://mern-learn-baf2.onrender.com/signup",{
 
                     firstName:firstName,
                     lastName:lastName,
