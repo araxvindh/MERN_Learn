@@ -2,8 +2,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom';
-const navigate =useNavigate();
+// import { useNavigate } from 'react-router-dom';
+// const navigate =useNavigate();
 function Sign() {
         const [firstName,setFName]=useState("");
         const [lastName,setLName]=useState("");
@@ -21,19 +21,6 @@ function Sign() {
                     password:password,
                     phoneNumber:phoneNumber
                 });
-          
-                const message = req.data.message;
-                const isSignup =req.data.isSignUp;
-                if(isSignup)
-                {
-                    alert(message);
-                    navigate("./");
-                }
-                else
-                {
-                    alert(message);
-                }
-
         };
     return (
         <div>
