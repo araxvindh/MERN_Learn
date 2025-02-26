@@ -4,7 +4,6 @@ import { useState } from 'react';
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 function Sign() {
-    const navigate =useNavigate();
         const [firstName,setFName]=useState("");
         const [lastName,setLName]=useState("");
         const [email,setEmail]=useState("");
@@ -13,7 +12,8 @@ function Sign() {
         const handleSignUp =async(event)=>
         {
                 event.preventDefault();
-                const req = await axios.post("https://mern-learn-five.vercel.app/signup",{
+                const req = await axios.post("http://localhost:3001/signup",{
+
                     firstName:firstName,
                     lastName:lastName,
                     email:email,
