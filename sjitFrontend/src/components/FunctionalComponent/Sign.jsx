@@ -13,7 +13,7 @@ function Sign() {
         const handleSignUp =async(event)=>
         {
                 event.preventDefault();
-                const req = await axios.post("http://localhost:3001/signup",{
+                const req = await axios.post("https://mern-learn-five.vercel.app/signup",{
                     firstName:firstName,
                     lastName:lastName,
                     email:email,
