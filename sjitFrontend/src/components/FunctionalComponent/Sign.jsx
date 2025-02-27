@@ -21,7 +21,7 @@ function Sign() {
                     password:password,
                     phoneNumber:phoneNumber
                 });
-                const message = req.data.message
+            const message = req.data.message
             const isSignup = req.data.isSignup
             if (isSignup) {
              console.log(isSignup,message)

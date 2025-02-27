@@ -17,11 +17,11 @@ const UseMemoize =() =>
                 <br />
                 <hr />
 
-                CustomerId: <input type="text" value={custId} onChange={(e)=>setCustId(e.target.value)} />
+                CustomerId: <input type="text" id="CustomerId" value={custId} onChange={(e)=>setCustId(e.target.value)} />
                 <br />
                 <hr />
 
-                Password: <input type="text" value={pass} onChange={(e)=>setPass(e.target.value)} />
+                Password: <input type="text" id="Password" value={pass} onChange={(e)=>setPass(e.target.value)} />
                 <hr />
 
                 <button onClick={handleEvent}>Login</button>
